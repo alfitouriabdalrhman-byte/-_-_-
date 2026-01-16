@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Organic Chemistry – Mind Maps</title>
+
+<style>
+body{
+  margin:0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(180deg,#f8fafc,#eef2ff);
+  color:#1e293b;
+}
+
+/* ---------- General ---------- */
+h1{
+  text-align:center;
+  padding:20px 10px 5px;
+  margin:0;
+  color:#0f172a;
+}
+.credit{
+  text-align:center;
+  font-size:14px;
+  color:#475569;
+  margin-bottom:30px;
+}
+
+/* ---------- Sheet ---------- */
+.sheet{
+  margin:25px auto;
+  padding:20px;
+  max-width:1100px;
+}
+.sheet-title{
+  text-align:center;
+  font-size:22px;
+  margin-bottom:30px;
+  font-weight:bold;
+}
+
+/* ---------- Mind Map ---------- */
+.mindmap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* center */
+.center{
+  background:#1e293b;
+  color:#fff;
+  padding:14px 22px;
+  border-radius:50px;
+  font-weight:bold;
+  margin-bottom:35px;
+}
+
+/* branches */
+.branches{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:25px;
+}
+
+.branch{
+  background:#ffffff;
+  border-radius:18px;
+  padding:16px;
+  width:300px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  position:relative;
+}
+
+/* arrow from center */
+.branch::before{
+  content:"";
+  position:absolute;
+  top:-25px;
+  right:50%;
+  width:2px;
+  height:25px;
+  background:#64748b;
+}
+
+/* branch title */
+.branch h3{
+  text-align:center;
+  margin:0 0 10px;
+  font-size:16px;
+  padding:6px;
+  border-radius:10px;
+  color:#fff;
+}
+
+/* colors */
+.b1 h3{background:#0ea5e9;}
+.b2 h3{background:#22c55e;}
+.b3 h3{background:#f97316;}
+.b4 h3{background:#a855f7;}
+
+/* reactions */
+.reaction{
+  background:#f8fafc;
+  border-radius:12px;
+  padding:10px;
+  margin-bottom:10px;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* arrow style */
+.arrow{
+  display:block;
+  margin:6px 0;
+  text-align:center;
+  font-weight:bold;
+  color:#334155;
+}
+.arrow span{
+  display:inline-block;
+  background:#e2e8f0;
+  padding:3px 8px;
+  border-radius:8px;
+  margin:0 2px;
+  font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>مراجعة سريعة – مخططات ذهنية</h1>
+<div class="credit">إعداد الطالب: <strong>عبدالرحمن الفيتوري</strong></div>
+
+<!-- ================= SHEET 2 ================= -->
+<div class="sheet">
+<div class="sheet-title">الشيت (2) – Aromatic Hydrocarbons</div>
+
+<div class="mindmap">
+  <div class="center">Benzene</div>
+
+  <div class="branches">
+
+    <div class="branch b1">
+      <h3>Electrophilic Substitution</h3>
+
+      <div class="reaction">
+        Benzene
+        <span class="arrow">
+          → <span>FeX₃</span><span>X₂</span><span>Substitution</span>
+        </span>
+        Halobenzene
+      </div>
+
+      <div class="reaction">
+        Benzene
+        <span class="arrow">
+          → <span>HNO₃ / H₂SO₄</span><span>Nitration</span>
+        </span>
+        Nitrobenzene
+      </div>
+    </div>
+
+    <div class="branch b2">
+      <h3>Friedel–Crafts</h3>
+
+      <div class="reaction">
+        Benzene
+        <span class="arrow">
+          → <span>R–Cl / AlCl₃</span><span>Alkylation</span>
+        </span>
+        Alkylbenzene
+      </div>
+
+      <div class="reaction">
+        Benzene
+        <span class="arrow">
+          → <span>RCOCl / AlCl₃</span><span>Acylation</span>
+        </span>
+        Acylbenzene
+      </div>
+    </div>
+
+    <div class="branch b3">
+      <h3>Side Chain Reaction</h3>
+
+      <div class="reaction">
+        Alkylbenzene
+        <span class="arrow">
+          → <span>KMnO₄ (hot)</span><span>Oxidation</span>
+        </span>
+        Benzoic Acid
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- ================= SHEET 3 ================= -->
+<div class="sheet">
+<div class="sheet-title">الشيت (3) – Alcohols & Ethers</div>
+
+<div class="mindmap">
+  <div class="center">Alcohols</div>
+
+  <div class="branches">
+
+    <div class="branch b1">
+      <h3>Preparation</h3>
+
+      <div class="reaction">
+        Alkene
+        <span class="arrow">
+          → <span>H⁺</span><span>Hydration</span>
+        </span>
+        Alcohol
+      </div>
+
+      <div class="reaction">
+        Aldehyde
+        <span class="arrow">
+          → <span>LiAlH₄</span><span>Reduction</span>
+        </span>
+        1° Alcohol
+      </div>
+    </div>
+
+    <div class="branch b2">
+      <h3>From Carbonyl</h3>
+
+      <div class="reaction">
+        Ketone
+        <span class="arrow">
+          → <span>NaBH₄</span><span>Reduction</span>
+        </span>
+        2° Alcohol
+      </div>
+
+      <div class="reaction">
+        Carbonyl
+        <span class="arrow">
+          → <span>RMgX</span><span>Addition</span>
+        </span>
+        Alcohol
+      </div>
+    </div>
+
+    <div class="branch b3">
+      <h3>Ethers</h3>
+
+      <div class="reaction">
+        Alcohol
+        <span class="arrow">
+          → <span>H₂SO₄ / 140°C</span><span>Dehydration</span>
+        </span>
+        Ether
+      </div>
+
+      <div class="reaction">
+        Alkoxide
+        <span class="arrow">
+          → <span>1° R–X</span><span>Williamson</span>
+        </span>
+        Ether
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- ================= SHEET 4 ================= -->
+<div class="sheet">
+<div class="sheet-title">الشيت (4) – Aldehydes & Ketones</div>
+
+<div class="mindmap">
+  <div class="center">Carbonyl Compounds</div>
+
+  <div class="branches">
+
+    <div class="branch b1">
+      <h3>Preparation</h3>
+
+      <div class="reaction">
+        1° Alcohol
+        <span class="arrow">
+          → <span>PCC</span><span>Oxidation</span>
+        </span>
+        Aldehyde
+      </div>
+
+      <div class="reaction">
+        2° Alcohol
+        <span class="arrow">
+          → <span>KMnO₄</span><span>Oxidation</span>
+        </span>
+        Ketone
+      </div>
+    </div>
+
+    <div class="branch b2">
+      <h3>Main Reactions</h3>
+
+      <div class="reaction">
+        Aldehyde / Ketone
+        <span class="arrow">
+          → <span>LiAlH₄</span><span>Reduction</span>
+        </span>
+        Alcohol
+      </div>
+
+      <div class="reaction">
+        Carbonyl
+        <span class="arrow">
+          → <span>RMgX</span><span>Addition</span>
+        </span>
+        Alcohol
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<!-- ================= SHEET 5 ================= -->
+<div class="sheet">
+<div class="sheet-title">الشيت (5) – Carboxylic Acids</div>
+
+<div class="mindmap">
+  <div class="center">Carboxylic Acids</div>
+
+  <div class="branches">
+
+    <div class="branch b1">
+      <h3>Preparation</h3>
+
+      <div class="reaction">
+        Aldehyde
+        <span class="arrow">
+          → <span>KMnO₄</span><span>Oxidation</span>
+        </span>
+        Carboxylic Acid
+      </div>
+
+      <div class="reaction">
+        Nitrile
+        <span class="arrow">
+          → <span>H⁺ / OH⁻</span><span>Hydrolysis</span>
+        </span>
+        Carboxylic Acid
+      </div>
+    </div>
+
+    <div class="branch b2">
+      <h3>Derivatives</h3>
+
+      <div class="reaction">
+        Acid
+        <span class="arrow">
+          → <span>SOCl₂</span><span>Substitution</span>
+        </span>
+        Acid Chloride
+      </div>
+
+      <div class="reaction">
+        Acid
+        <span class="arrow">
+          → <span>Alcohol / H⁺</span><span>Esterification</span>
+        </span>
+        Ester
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+</body>
+</html>
